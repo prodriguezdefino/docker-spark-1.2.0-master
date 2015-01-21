@@ -28,4 +28,4 @@ RUN mkdir -p $SPARK_HOME/logs
 ## deploy the master files
 RUN cp /tmp/spark-files/log4j.properties $SPARK_HOME/conf/
 
-CMD ["/usr/local/spark/spark_master_files/run_master_node.sh"]
+CMD ["/usr/local/spark/spark_master_files/run_master_node.sh", "-d"]
