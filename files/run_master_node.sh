@@ -59,7 +59,6 @@ echo " "
 $HADOOP_PREFIX/sbin/start-yarn.sh
 sleep 5
 
-
 echo " "
 echo "Starting Spark Master..."
 echo "************************"
