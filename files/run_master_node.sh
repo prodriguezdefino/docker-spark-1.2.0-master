@@ -31,6 +31,7 @@ echo " "
 echo "Preparing Apache Spark..."
 echo " "
 sed s/HOSTNAME/$HOSTNAME/ $HADOOP_PREFIX/etc/hadoop/core-site.xml.template > $HADOOP_PREFIX/etc/hadoop/core-site.xml
+sed s/HOSTNAME/$HOSTNAME/ $HADOOP_PREFIX/etc/hadoop/yarn-site.xml.template > $HADOOP_PREFIX/etc/hadoop/yarn-site.xml
 sed "s/__MASTER__/$HOSTNAME/;s/__HOSTNAME__/$HOSTNAME/;s/__LOCAL_IP__/$IP/" /tmp/spark-files/spark-env.sh.template > $SPARK_HOME/conf/spark-env.sh
 
 sed s/HOSTNAME/$HOSTNAME/ $SPARK_HOME/yarn-remote-client/core-site.xml.template > $SPARK_HOME/yarn-remote-client/core-site.xml
