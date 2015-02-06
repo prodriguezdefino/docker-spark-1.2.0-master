@@ -1,6 +1,6 @@
 ## Apache Spark Master Node
 #
-FROM prodriguezdefino/sparkbase:1.2.0
+FROM prodriguezdefino/sparkbase
 MAINTAINER prodriguezdefino prodriguezdefino@gmail.com
 
 # Expose TCP ports 7077 8080
