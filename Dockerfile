@@ -23,7 +23,6 @@ RUN mkdir -p /var/lib/hadoop/hdfs
 #RUN chown hdfs.hdfs /var/lib/hadoop/hdfs
 RUN rm -rf $SPARK_HOME/logs
 RUN mkdir -p $SPARK_HOME/logs
-#RUN chown hdfs.hdfs /opt/spark-$SPARK_VERSION/logs
 
 ## deploy the master files
 RUN cp /tmp/spark-files/log4j.properties $SPARK_HOME/conf/
